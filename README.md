@@ -1,5 +1,7 @@
 # Anúncios Top com IA
 
+**🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
+
 Sistema de quatro decisões pra transformar uma ideia em um anúncio em vídeo gerado por IA, pronto
 pra Meta, sem gastar crédito às cegas. Quatro skills pro Claude Code, em português, encadeadas:
 cada uma faz **uma** coisa e deixa um documento escrito pra seguinte.

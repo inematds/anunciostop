@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Anuncios Top con IA — cuatro decisiones, un anuncio listo para Meta</title>
+<meta content="Cuatro skills para Claude Code, en portugués, para transformar una idea en un anuncio en video generado por IA: espiar, dirigir, auditar y montar. Sin gastar créditos a ciegas." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px 1fr;gap:16px;margin-bottom:26px}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+  table{border-collapse:collapse;width:100%;font-size:.9rem;margin-top:10px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--amb);font-family:Sora;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+  td code{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:.05em .4em;font-size:.85em}
+  .tbl{overflow-x:auto}
+  .fig{margin:30px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px -30px #000}
+  .fig img{width:100%;display:block;max-height:430px;object-fit:cover}
+  .fig figcaption{padding:12px 16px;font-size:.86rem;color:var(--mut);background:var(--card)}
+</style>
+<link href="https://inematds.github.io/anunciostop/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/anunciostop/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/anunciostop/guia/es/" hreflang="es" rel="alternate"/></head>
+<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<nav><div class="wrap">
+<a class="brand" href="#top"><span class="emoji">🎯</span> Anuncios Top con IA</a>
+<span class="sep">|</span>
+<span class="clubpro">
+<a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+<span class="sep">-</span>
+<a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
+</span>
+<div class="links">
+<a class="sec" href="#oque">Qué es</a>
+<a class="sec" href="#fluxo">Cómo funciona</a>
+<a class="sec" href="#guia">Guía de uso</a>
+<a class="sec" href="#skills">Las skills</a>
+<a class="sec" href="#roadmap">Roadmap</a>
+<button aria-label="Cambiar tema" class="tgl" id="themeToggle" title="Cambiar tema">🌙</button>
+<a class="btn" href="https://github.com/inematds/anunciostop" rel="noopener" target="_blank">GitHub</a>
+</div>
+</div></nav>
+<header class="hero" id="top">
+<div class="glow"></div>
+<div class="wrap">
+<div>
+<span class="chip">4 skills · Claude Code · portugués</span>
+<h1>Anuncios en video con IA, <span class="amb">sin gastar créditos a ciegas</span></h1>
+<p class="lead">El prompt no es el trabajo. El trabajo consiste en decidir el ángulo, fijar la identidad, dirigir el plan y auditar antes de publicar. Cuatro skills lo hacen, una decisión cada una, y dejan por escrito el resultado para la siguiente.</p>
+<div class="cta">
+<a class="btn" href="#guia">Empezar la guía</a>
+<a class="btn ghost" href="https://github.com/inematds/anunciostop/raw/main/anuncios-top-skills.zip">Descargar las skills (.zip)</a>
+<a class="btn ghost" href="https://github.com/inematds/anunciostop" rel="noopener" target="_blank">Ver en GitHub</a>
+</div>
+</div>
+<figure><img alt="Ilustración del proyecto Anúncios Top com IA" src="../assets/hero.jpg"/></figure>
+</div>
+</header>
+<section id="oque"><div class="wrap">
+<span class="chip">Qué es</span>
+<h2>Un sistema de cuatro decisiones, no un generador de prompts</h2>
+<p class="sub">Traes una idea (o el enlace de un competidor) y te vas con un anuncio de 30 a 90 segundos, generado por IA, montado y masterizado para Meta. Cada etapa deja un documento que la siguiente lee. Por eso el sistema sigue siendo válido cuando cambie el modelo de moda.</p>
+<div class="grid g3">
+<div class="card"><h3>🕵️ Ángulo antes del prompt</h3><p>Espía la Biblioteca de anuncios de Meta y devuelve hooks literales, ritmo medido y el esqueleto persuasivo de quienes ya están pagando. Se copia la estructura, nunca la mentira.</p></div>
+<div class="card"><h3>🎬 Dirigir, no pedir</h3><p>Cinco preguntas, diez guiones con mecanismos diferentes y, del elegido, un dossier con las imágenes que debes crear antes, qué subir y el prompt listo para pegar. Veintiún modos de video, cinco vías de identidad.</p></div>
+<div class="card"><h3>🔍 Auditar antes de gastar</h3><p>El video está listo. ¿Lo conservas, lo editas localmente, lo extiendes, lo guardas en el montaje o lo vuelves a generar? Una decisión con motivo y un intervalo de tiempo exacto. Aquí se deja de tirar el dinero.</p></div>
+</div>
+</div></section>
+<section id="fluxo"><div class="wrap">
+<span class="chip">Cómo funciona</span>
+<h2>Cada skill se encarga de una sola decisión</h2>
+<p class="sub">No hay una skill que lo decida todo: hay cuatro, y cada una deja a la siguiente un documento con lo que ya está decidido. La de producción no reinventa la estrategia; la de edición no cambia el plan.</p>
+<div class="flow">
+<span>/espiona-ads</span><span class="arr">→</span>
+<span>/video-ia</span><span class="arr">→</span>
+<span>tú generas (Agnes, Seedance, Dreamina…)</span><span class="arr">→</span>
+<span>/auditor-video-ia</span><span class="arr">→</span>
+<span>/anuncio-edita</span><span class="arr">→</span>
+<span>Meta</span>
+</div>
+<div class="tbl"><table>
+<tr><th>De dónde viene</th><th>Quién decide</th><th>Qué deja para la siguiente</th></tr>
+<tr><td>Una cuenta que ya anuncia</td><td><code>/espiona-ads</code></td><td>El playbook: hooks literales, ritmo medido y el esqueleto que funciona</td></tr>
+<tr><td>Una idea tuya, o este playbook</td><td><code>/video-ia</code></td><td>Diez guiones para elegir; por cada uno elegido, un dossier con las imágenes que debes crear, qué subir y los prompts listos</td></tr>
+<tr><td>El video ya generado</td><td><code>/auditor-video-ia</code></td><td>Una decisión: conservar, editar, extender, guardar en el montaje o regenerar</td></tr>
+<tr><td>Los módulos aprobados</td><td><code>/anuncio-edita</code></td><td>El master a 1080×1920 y el SRT, listos para subir</td></tr>
+</table></div>
+<p class="sub" style="margin-top:22px">Siempre se usan dos: la que busca la idea y la que produce. Las otras dos son opcionales y existen para ahorrar dinero cuando ya estás generando. <strong>Ninguna de las cuatro gasta dinero por su cuenta</strong>: el botón para generar es tuyo.</p>
+<figure class="fig"><img alt="Cuatro placas de vidrio en fila, cada una pasando la luz a la siguiente" src="../assets/fluxo.jpg"/><figcaption>Ilustración: cada etapa entrega a la siguiente un documento con lo que ya está decidido.</figcaption></figure>
+</div></section>
+<section id="pre"><div class="wrap">
+<span class="chip">Requisitos previos</span>
+<h2>Claude Code, ffmpeg y dos claves</h2>
+<p class="sub">Agnes es el proveedor predeterminado de imágenes y video, sin costo. Seedance, Dreamina y similares funcionan pegando el prompt en su web: aquí no se configura nada.</p>
+<div class="grid g3">
+<div class="card"><h3>Claude Code</h3><p>Dónde se ejecutan las skills. Cualquier instalación con una carpeta de skills de usuario.</p><pre><span class="c"># revisa la carpeta de skills</span>
+<span class="k">ls</span> ~/.claude/skills/</pre></div>
+<div class="card"><h3>ffmpeg + ffprobe</h3><p>Para espionaje (cortes, fotogramas) y montaje (empalmes, subtítulos, master).</p><pre><span class="k">ffmpeg</span> -version
+<span class="k">ffmpeg</span> -filters | <span class="k">grep</span> -E 'subtitles|ass'  <span class="c"># libass?</span></pre></div>
+<div class="card"><h3>Claves</h3><p>Groq para transcribir; Agnes para generar sin costo. Se leen en runtime, nunca se copian.</p><pre><span class="k">export</span> GROQ_API_KEY=<span class="s">"sua-chave"</span>
+<span class="k">export</span> AGNES_API_KEY=<span class="s">"sua-chave"</span></pre></div>
+</div>
+</div></section>
+<section id="guia"><div class="wrap">
+<span class="chip">Guía de uso · paso a paso</span>
+<h2>De cero al primer anuncio</h2>
+<p class="sub">Los comandos de abajo son los que las skills usan realmente. Lo que cambia es tu marca y tu idea.</p>
+<div class="step"><div class="b">1</div><div>
+<h3>Instala las cuatro skills</h3>
+<p>Descarga el zip, descomprímelo y copia las carpetas. Si Claude Code hace cinco preguntas al llamar <code>/video-ia</code>, está instalado.</p>
+<pre><span class="k">unzip</span> anuncios-top-skills.zip
+<span class="k">cp</span> -R skills/* ~/.claude/skills/   <span class="c"># espiona-ads, video-ia, auditor-video-ia, anuncio-edita</span></pre>
+</div></div>
+<div class="step"><div class="b">2</div><div>
+<h3>Completa la ficha de marca (una vez, quince minutos)</h3>
+<p>Todo lo que esté en la ficha la skill deja de preguntarlo. Qué se vende, para quién (una persona, no un segmento), la oferta con la redacción exacta, la prueba que se puede mostrar, el tono, las prohibiciones, el color de acento.</p>
+<pre><span class="k">mkdir</span> -p anuncios/marcas
+<span class="k">cp</span> ~/.claude/skills/video-ia/marcas/_modelo.md anuncios/marcas/minha-marca.md
+<span class="c"># ejemplo completado para calibrar el nivel de detalle:</span>
+<span class="c">#   ~/.claude/skills/video-ia/marcas/_exemplo-oficina-do-bairro.md</span></pre>
+</div></div>
+<div class="step"><div class="b">3</div><div>
+<h3>Espía a un competidor (opcional, pero de ahí viene el ángulo)</h3>
+<p>Pega la URL de la Biblioteca de anuncios de Meta. La skill extrae los anuncios activos, los clasifica por días en circulación y variantes activas, transcribe, mide el ritmo y devuelve el playbook con un banco de hooks literales.</p>
+<pre><span class="k">/espiona-ads</span> https://www.facebook.com/ads/library/?...&amp;view_all_page_id=...
+<span class="c"># salida: anuncios/referencias-creativas/espionagem-&lt;marca&gt;-&lt;data&gt;.md</span></pre>
+</div></div>
+<div class="step"><div class="b">4</div><div>
+<h3>Dirige el video: cinco preguntas, diez guiones, un dossier</h3>
+<p>Responde lo que sepas; para lo demás, la skill propone. Se detiene después del menú y pregunta cuáles quieres desarrollar. Solo entonces viene lo técnico: duración, quién aparece, plataforma. Nunca escribe un prompt sin menú.</p>
+<pre><span class="k">/video-ia</span> quero um anúncio de 30 s pro meu curso de automação pra oficinas
+<span class="c"># → 5 preguntas → menú de 10 → "¿cuáles desarrollo?" → dossier por video en</span>
+<span class="c"># anuncios/roteiros/&lt;data&gt;-&lt;conceito&gt;.md  (4 bloques: imágenes, guion, cargas, prompts)</span></pre>
+</div></div>
+<div class="step"><div class="b">5</div><div>
+<h3>Genera en tu plataforma</h3>
+<p>En Agnes (opción predeterminada, sin costo): imágenes de identidad, keyframes A y B por clip, video por interpolación, voz mediante inemavox. En las demás: pega el prompt en la web del proveedor. El dossier indica el orden de carga, y ese orden es el binding.</p>
+<pre><span class="c"># Agnes: imágenes (text2img / img2img, máx. 2 refs, prompt en inglés)</span>
+<span class="k">python3</span> ~/projetos/imagens-agnes/gerar.py <span class="s">"&lt;prompt&gt;"</span> -o kf-01a.png --ratio 9:16
+<span class="k">python3</span> ~/projetos/imagens-agnes/gerar.py <span class="s">"&lt;prompt&gt;"</span> -o kf-01b.png --ratio 9:16 --ref kf-01a.png
+<span class="c"># vídeo: POST /v1/videos, mode keyframes, num_frames 8n+1 (≤481 en 720p), ≤5 req/min</span></pre>
+</div></div>
+<div class="step"><div class="b">6</div><div>
+<h3>Audita antes de generar de nuevo</h3>
+<p>Preflight del prompt (verificador mecánico + gates) y postflight del MP4. Produce una única decisión con motivo e intervalo: conservar, editar localmente, extender, guardar en el montaje o volver a generar.</p>
+<pre><span class="k">python3</span> ~/.claude/skills/auditor-video-ia/scripts/checa-prompt.py prompt.txt --interface agnes
+<span class="k">/auditor-video-ia</span> anuncios/criativos/oficina/clipe-01.mp4
+<span class="c"># DECISIÓN: EDITAR LOCALMENTE · Por qué: … · Acción: … · No tocar: …</span></pre>
+</div></div>
+<div class="step"><div class="b">7</div><div>
+<h3>Monta, subtitula y masteriza</h3>
+<p>Intervención mínima: empalmes, pista de voz, subtítulos sobrios con el color de la marca (nunca sobre la cara), rótulo de cierre sobre el video en movimiento, master a 1080×1920 con loudness de plataforma.</p>
+<pre><span class="k">/anuncio-edita</span> anuncios/criativos/oficina/   <span class="c"># N módulos → master + SRT</span>
+<span class="c"># por dentro:</span>
+<span class="k">python3</span> ~/.claude/skills/anuncio-edita/scripts/captions.py --transcript edicao/transcript.json --out edicao/captions.json --mode pages
+<span class="k">python3</span> ~/.claude/skills/anuncio-edita/scripts/master-audio.py --in peca.mp4 --out master.mp4 -I -14 -tp -1.0</pre>
+</div></div>
+<div class="step"><div class="b">8</div><div>
+<h3>Registra y cambia una variable</h3>
+<p>Decisión, costo, intento, variable modificada, resultado. Sin eso no se aprende, se repite. El cuarto anuncio funciona mejor que el primero porque cada pieza dejó un registro.</p>
+<pre><span class="c"># una línea por pieza en</span>
+~/.claude/skills/auditor-video-ia/assets/registro-experimentos.csv</pre>
+</div></div>
+</div></section>
+<section id="skills"><div class="wrap">
+<span class="chip">Las skills</span>
+<h2>Qué sabe hacer cada una</h2>
+<p class="sub">Todo en markdown, legible, dentro de cada carpeta. Los adaptadores por plataforma tienen fecha: cuando un número no coincida con lo que ves en pantalla, corrige el adaptador y sigue.</p>
+<div class="grid g2">
+<div class="card"><h3>🕵️ /espiona-ads</h3><p>Extracción en el navegador (Meta bloquea curl), clasificación con indicadores indirectos honestos (la Biblioteca no publica gasto ni CTR), procesamiento con ffmpeg y Whisper, análisis de fotogramas con subagentes, veredicto de IA con evidencia y el bloque obligatorio: qué se puede trasplantar, qué requiere cuidado y qué no.</p></div>
+<div class="card"><h3>🎬 /video-ia</h3><p>Entrevista en dos bloques, menú de diez con siete reglas, catálogo de 21 modos, cold open con prueba de siete preguntas, ritmo y presupuesto de palabras por sección, cuatro bloques de textura, cinco vías de identidad, ficha del presentador, tres referencias de identidad, lo que se hornea en imagen, adaptadores Agnes, Seedance 2.5 y Dreamina.</p></div>
+<div class="card"><h3>🔍 /auditor-video-ia</h3><p>Preflight por interfaz, postflight técnico (ffprobe, muestreo visual, gates de identidad, manos, boca, producto, texto, continuidad) y comercial (ver en silencio y en el celular), tabla síntoma → causa → solución, jerarquía de cinco decisiones, transparencia y consentimiento, verificador mecánico de prompts.</p></div>
+<div class="card"><h3>✂️ /anuncio-edita</h3><p>Ingesta y diagnóstico, montaje con corte directo y crossfade solo en el ambiente, tres casos de pista de voz, subtítulos en pastilla con karaoke sutil (mediante libass o superposición con PNG), rótulo de cierre, master EBU R128, menú de intervenciones opcionales con criterio editorial.</p></div>
+</div>
+<div class="ex" style="margin-top:22px">
+<figure><img alt="Cuadrícula de fotogramas de video con uno iluminado en ámbar" src="../assets/auditoria.jpg"/><figcaption>Ilustración de la etapa de auditoría: se conserva un fotograma y el resto se decide. Las demostraciones reales del proyecto hilo (menú de diez, dossier, clips y master) se incorporan aquí a medida que se produce el curso.</figcaption></figure>
+<div class="card"><h3>Un dossier de salida, siempre con cuatro bloques</h3><pre><span class="k"># O estagiário invisível · 30 s · Agnes</span>
+
+<span class="k">## 1 · Imagens que você precisa criar antes de gerar</span>
+<span class="c">kf-01a / kf-01b: notebook solo en la oficina oscura…</span>
+<span class="k">## 2 · Roteiro pra ler em voz alta</span>
+<span class="c">«Hace cuatro horas que estoy esperando que decidas.» (9 palabras)</span>
+<span class="k">## 3 · O que subir e em que ordem</span>
+<span class="c">1ª @Image1 kf-01a · 2ª @Image2 kf-01b</span>
+<span class="k">## 4 · Prompts pra copiar e colar</span>
+<span class="c">[MOTION] the camera pushes in slowly while the screen fills…</span></pre></div>
+</div>
+</div></section>
+<section id="roadmap"><div class="wrap">
+<span class="chip">Roadmap</span>
+<h2>De skills instaladas a un curso completo</h2>
+<p class="sub">El plan del curso está en el repo (<a href="https://github.com/inematds/anunciostop/blob/main/PLANO-CURSO.md">PLANO-CURSO.md</a>): siete módulos, un anuncio que atraviesa todos ellos, formato INEMA v2.</p>
+<div class="phase"><div class="tag">Listo</div><div class="d"><strong>Las 4 skills en portugués, con adaptador Agnes</strong><span>Traducción y adaptación completas, script de verificación de prompts, scripts de montaje portátiles, zip de descarga, instalación probada.</span></div></div>
+<div class="phase"><div class="tag">Listo</div><div class="d"><strong>Plan del curso y documentación</strong><span>Siete módulos con objetivo, contenido, ejercicio y entregable; README completo; esta guía.</span></div></div>
+<div class="phase"><div class="tag">Siguiente</div><div class="d"><strong>Ejemplos del proyecto hilo</strong><span>Ficha de marca, menú de diez, dossier, tres referencias de identidad, clips en Agnes (uno bueno y uno con una falla auditable), master final.</span></div></div>
+<div class="phase"><div class="tag">Después</div><div class="d"><strong>El curso en HTML (formato INEMA v2)</strong><span>Siete módulos en formato de videos cortos + ejercicio, publicados en el portal INEMA.CLUB.</span></div></div>
+<div class="phase"><div class="tag">Después</div><div class="d"><strong>Cola y pipeline Agnes en el propio paquete</strong><span>Hoy el video por keyframes usa el pipeline de videoanima; la meta es un script propio dentro de video-ia.</span></div></div>
+</div></section>
+<footer>
+<div class="wrap">
+<div class="pill">Claude Code</div><div class="pill">ffmpeg</div><div class="pill">Agnes · Seedance · Dreamina</div><div class="pill">Python</div>
+<p style="margin-top:18px">Anuncios Top con IA · proyecto de investigación y educación del INEMA ·
+      <a href="https://github.com/inematds/anunciostop">inematds/anunciostop</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+</div>
+</footer>
+<script>
+  (function(){
+    var KEY='anunciostop-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; }
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      localStorage.setItem(KEY, light?'light':'dark');
+    });
+  })();
+</script>
+</body>
+</html>
