@@ -24,6 +24,16 @@ serem contados por um desconhecido.
 
 ---
 
+## Contents
+
+- VIA A · Personagem inventado
+- VIA B · Cara real com referências
+- VIA C · Foto + áudio animados
+- VIA D · Voz off
+- VIA E · Gravar e transformar
+- Como escolher, numa tabela
+- E a regra que resume tudo
+
 ## VIA A · Personagem inventado
 
 O normal pra UGC, depoimentos e entrevistas de rua. Sem trâmites e sem permissões.

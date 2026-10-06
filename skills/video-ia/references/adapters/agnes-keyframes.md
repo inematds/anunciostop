@@ -1,5 +1,14 @@
 # Adaptador · Agnes por keyframes (custo zero)
 
+## Contents
+
+- Alcance e data
+- A unidade de produção: o clipe por keyframes
+- Pipeline por peça
+- Regras de prompt medidas (imagem)
+- Regras de prompt (vídeo por keyframes)
+- Gate
+
 ## Alcance e data
 
 Perfil escrito em 2026-09-06 a partir de medições reais da API (`~/projetos/agnes-nei/NOTAS-API.md`).

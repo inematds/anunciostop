@@ -1,5 +1,17 @@
 # Adaptador · Seedance 2.5 multishot (pago, sem configuração local)
 
+## Contents
+
+- Alcance e data
+- Antes de compilar: olhe a superfície onde vai ser gerado de verdade
+- Slot de áudio em superfícies web
+- Modos
+- Referências e binding
+- Estrutura compilada
+- Regras de plano
+- Estilo variável
+- Gate
+
 ## Alcance e data
 
 Perfil de agosto de 2026. Separar sempre **modelo** de **interface/provedor**. Usa-se pela web do

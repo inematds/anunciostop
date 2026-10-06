@@ -1,5 +1,14 @@
 # Ritmo e arquitetura temporal
 
+## Contents
+
+- Princípio
+- O orçamento de palavras
+- Quantos planos cabem, e com que forma
+- Arquiteturas
+- Áudio
+- Gate
+
 ## Princípio
 
 Ritmo é frequência de informação, não número de cortes. Escolhe-se por conceito e compila-se

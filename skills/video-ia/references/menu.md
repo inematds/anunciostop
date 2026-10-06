@@ -3,6 +3,13 @@
 **A fase que torna a skill útil.** O objetivo é que quem lê consiga **ver o vídeo na cabeça** e
 dizer «esse sim, esse não» sem ter gerado nada.
 
+## Contents
+
+- O formato de cada ficha
+- As sete regras do menu
+- Depois do menu, para
+- E uma honestidade obrigatória
+
 ## O formato de cada ficha
 
 ```

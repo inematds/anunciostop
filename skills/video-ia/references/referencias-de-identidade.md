@@ -11,6 +11,17 @@ Se não tem, o bloco 1 do Markdown leva estes três prompts, **nesta ordem**, po
 anterior como referência. Geram-se num gerador de imagens anexando a foto real. Na Agnes
 (`imagens-agnes`, custo zero): `--ref foto-real.png`, no máximo 2 referências por imagem.
 
+## Contents
+
+- Antes: a impressão digital da identidade
+- 1 · O close · a partir da foto real
+- 2 · A folha de personagem · anexando o close
+- 3 · Rosto + corpo inteiro · anexando o close
+- Como as três entram no prompt do vídeo
+- A prova de cinco segundos
+- Onde se guardam
+- E se o personagem é inventado
+
 ## Antes: a impressão digital da identidade
 Um bloco literal de traços que se cola **igual** nos três prompts e no prompt do vídeo. Se
 reescrever com outras palavras no terceiro, o terceiro sai com outra cara.

@@ -12,6 +12,16 @@ ainda converte.
 
 ---
 
+## Contents
+
+- A doutrina
+- Onde vai a oferta · recomendação padrão, NÃO regra dura
+- O padrão dos que funcionam · medido frame a frame
+- Os seis mecanismos
+- O teste dos 3 segundos · comporta
+- Os cinco anti-padrões
+- Quanto dá pra dizer no arranque
+
 ## A doutrina
 
 **Nos primeiros três segundos tem que ACONTECER algo. Nenhum abre com uma cara falando.**

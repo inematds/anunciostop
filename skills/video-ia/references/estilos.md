@@ -14,6 +14,15 @@ falado vai em português; o prompt, em inglês.
 
 ---
 
+## Contents
+
+- BLOCO A · UGC de celular
+- BLOCO B · Mini-ficção
+- BLOCO C · Cinema
+- BLOCO D · Estilizado / não fotorrealista
+- A combinação que costuma ser a boa
+- 🔴 As cores se nomeiam em positivo
+
 ## BLOCO A · UGC de celular
 
 Pra UGC selfie, depoimento, entrevista de rua e confessional: tudo que tem que parecer gravado

@@ -23,6 +23,14 @@ plataforma com `edit video`.
 
 ---
 
+## Contents
+
+- O que você grava · as cinco regras do bruto
+- A forma do prompt de transformação
+- Quando esta via é a boa, e quando não
+- Os riscos próprios desta via
+- Permissão
+
 ## O que você grava · as cinco regras do bruto
 
 O bruto não é o vídeo: é o **esqueleto de movimento** sobre o qual a cena se constrói. Grava-se

@@ -3,6 +3,14 @@
 > Vive em `/video-ia`: promptar uma imagem é produção. Os assets que esta referência produz
 > (primeiro frame, último frame, produto, locação) são inventariados em `assets.md`.
 
+## Contents
+
+- Quando precisa de imagem, e quando não
+- Como se monta um prompt de imagem
+- 🔴 Tudo que tem que sair EXATO se assa em imagem, não se pede ao vídeo
+- O produto no plano
+- Via animada ou de cinema
+
 ## Quando precisa de imagem, e quando não
 
 As plataformas de multishot geram vídeo com diálogo direto do texto. Nelas, as imagens só são

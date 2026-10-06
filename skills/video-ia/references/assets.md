@@ -1,5 +1,17 @@
 # Bíblia visual e manifesto de assets
 
+## Contents
+
+- Princípio
+- 🔴 A lei: os assets são neutros, a locação leva o look
+- Assets possíveis
+- Referências de identidade
+- Produto
+- Locação
+- Último frame como ponte entre gerações
+- Se o usuário já tem vídeo real do processo
+- Movimento de câmera
+
 ## Princípio
 
 Construir o set antes de gerar. Uma referência vinculada e aprovada controla melhor que uma longa

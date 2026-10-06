@@ -2,6 +2,18 @@
 
 **O motor de perguntas.** Curto de propósito: quem usa esta skill quer ideias, não um formulário.
 
+## Contents
+
+- Por que em dois blocos
+- Como se leem as respostas
+- E mais uma pergunta, só se precisar
+- O que NÃO se pergunta no bloco 1
+- O ritmo não se pergunta aqui: recomenda-se no menu e confirma-se no bloco 2
+- Como cada resposta muda o prompt
+- Montagem e geração
+- A pergunta que se faz sempre no bloco 2
+- O anti-padrão
+
 ## Por que em dois blocos
 
 Se você pergunta a duração, a plataforma ou o avatar **antes** de ter as ideias, condiciona as

@@ -1,5 +1,14 @@
 # Adaptador · Dreamina one-take e Seedance 2.0 modular (pago, sem configuração local)
 
+## Contents
+
+- Alcance e evidência
+- Escolher trilho
+- Modelo Dreamina one-take
+- Regras medidas de diálogo
+- Câmera, corpo e cena
+- Gate modular do 2.0
+
 ## Alcance e evidência
 
 Perfil de agosto de 2026. Usa-se pela web do provedor; nada se configura no `.env` deste pacote.

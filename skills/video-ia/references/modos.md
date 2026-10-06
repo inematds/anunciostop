@@ -6,6 +6,18 @@ pra convencer, e o que vigiar ao gerá-la.
 **Os modos são as categorias.** Não há famílias por cima, nem níveis de dificuldade, nem lista do
 proibido. **Todos se propõem.** Quem pede o vídeo decide o que se produz.
 
+## Contents
+
+- A regra de ordem
+- Como se usa este catálogo
+- O catálogo de relance
+- O catálogo, um por um
+- O que até pouco tempo não saía, e agora sai
+- Que modo aguenta 60 segundos, e qual não
+- O que revisar conforme o modo
+- A nota sobre comédia
+- Modo × textura · são eixos diferentes
+
 ## A regra de ordem
 
 **Mensagem → mecanismo → modo.** Nessa ordem e nunca ao contrário.
